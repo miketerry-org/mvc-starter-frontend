@@ -1,0 +1,29 @@
+<!-- Header/Banner -->
+<header class="banner">
+
+  {{>navbar}}
+ 
+  <!-- Logo -->
+  <img src="/img/logo.svg" alt="Site Logo" class="logo me-3" />
+
+  <!-- Site Title & Slogan -->
+  <div class="site-title">
+    <h1 class="mb-0">{{site_title}}</h1>
+    <h2 class="fs-5 text-muted">{{site_slogan}}</h2>
+  </div>
+
+  <!-- Login/Register/Theme -->
+  <div class="auth-block ms-3">
+    <a href="/login" class="btn btn-outline-light btn-sm">Login</a>
+    <a href="/register" class="btn btn-outline-light btn-sm">Register</a>
+    <button
+      id="theme-toggle"
+      class="theme-toggle-btn"
+      type="button"
+      aria-label="Toggle dark or light theme"
+      aria-pressed="true"
+    >
+      🌙 Dark
+    </button>
+  </div>
+</header>
